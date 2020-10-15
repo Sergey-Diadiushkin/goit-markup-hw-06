@@ -454,6 +454,35 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close></button>
+        <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="#" class="contact-form">
+          <h2 class="contact-form-group-title">Имя</h2>
+          <input type="text" class="contact-form-input" name="user-name" />
+          <h2 class="contact-form-group-title">Телефон</h2>
+          <input type="tel" class="contact-form-input" name="user-phone" />
+          <h2 class="contact-form-group-title">Почта</h2>
+          <input type="email" class="contact-form-input" name="user-email" />
+
+          <div class="contact-form-group">
+            <h2 class="contact-form-group-title">Комментарий</h2>
+            <textarea
+              name="user-massage"
+              rows="5"
+              cols="45"
+              class="contact-form-massage"
+            ></textarea>
+          </div>
+
+          <div class="container-contact-form-radio">
+            <input type="checkbox" class="contact-form-radio" />Соглашаюсь с
+            рассылкой и принимаю
+            <a class="checkbox-link" href="">Условия договора</a>
+          </div>
+
+          <div class="btn-wrapper">
+            <button type="submit" class="contact-form-submit">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
